@@ -1,9 +1,17 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+}
 #grid {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  width: 600px;
-  height: 600px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  width: 700px;
+  height: 700px;
   border: 1px solid black;
 }
 
