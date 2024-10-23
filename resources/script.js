@@ -1,4 +1,12 @@
 const gridDiv = document.getElementById("grid");
 const gridSize = 16;
 
-const gridCell = document.createElement("div");
+function createGrid(size) {
+  for (let i = 0; i < size * size; i++) {
+    const gridCell = document.createElement("div");
+
+    gridCell.classList.add("grid-cell");
+    gridDiv.appendChild(gridCell);
+  }
+}
+createGrid(gridSize);
