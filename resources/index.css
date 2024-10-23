@@ -1,0 +1,13 @@
+#grid {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: 600px;
+  height: 600px;
+}
+
+#gird-cell {
+  background-color: rgb(63, 82, 99);
+  border: 1 px solid black;
+}
