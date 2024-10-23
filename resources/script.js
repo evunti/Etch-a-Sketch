@@ -1,5 +1,5 @@
 const gridDiv = document.getElementById("grid");
-const gridSize = 20;
+const gridSize = 16;
 
 function createGrid(size) {
   for (let i = 0; i < size * size; i++) {
@@ -13,7 +13,7 @@ function createGrid(size) {
   }
 }
 
-createGrid(gridSize);
+createGrid(16);
 
 const shakeButton = document.getElementById("shake");
 shakeButton.addEventListener("click", function () {

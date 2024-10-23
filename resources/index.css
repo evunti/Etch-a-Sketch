@@ -8,8 +8,8 @@ h1 {
 }
 #grid {
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
   width: 700px;
   height: 700px;
   border: 1px solid black;
@@ -43,20 +43,19 @@ h1 {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-5px);
+    transform: translateX(-100px);
   }
   50% {
-    transform: translateX(5px);
+    transform: translateX(100px);
   }
   75% {
-    transform: translateX(-5px);
+    transform: translateX(-100px);
   }
   100% {
     transform: translateX(0);
   }
 }
 
-/* Add shake class to trigger animation */
 .shake {
   animation: shake 0.5s;
 }
