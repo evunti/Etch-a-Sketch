@@ -14,7 +14,7 @@ function createGrid(size) {
     });
   }
 }
-createGrid(16);
+createGrid(20);
 
 const newGridButton = document.getElementById("new-grid");
 newGridButton.addEventListener("click", function () {
