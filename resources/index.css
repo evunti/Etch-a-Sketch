@@ -20,21 +20,39 @@ h1 {
   background-color: rgb(63, 82, 99);
   transition: background-color 0.3s;
 }
+#buttons-container {
+  display: flex;
+  justify-content: center;
+}
 #shake {
   display: flex;
   justify-content: center;
   padding: 10px;
-  font-size: larger;
+  font-size: 20px;
 }
 
 #shake button {
   background-color: red;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px 20px;
 }
 
 #shake button:hover {
+  background-color: rgb(63, 82, 99);
+}
+#new-grid {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#new-grid button {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+#new-grid button:hover {
   background-color: rgb(63, 82, 99);
 }
 
