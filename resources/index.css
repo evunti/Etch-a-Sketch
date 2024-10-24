@@ -8,8 +8,8 @@ h1 {
 }
 #grid {
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
   width: 700px;
   height: 700px;
   border: 1px solid black;
@@ -20,21 +20,39 @@ h1 {
   background-color: rgb(63, 82, 99);
   transition: background-color 0.3s;
 }
+#buttons-container {
+  display: flex;
+  justify-content: center;
+}
 #shake {
   display: flex;
   justify-content: center;
   padding: 10px;
-  font-size: larger;
+  font-size: 20px;
 }
 
 #shake button {
   background-color: red;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px 20px;
 }
 
 #shake button:hover {
+  background-color: rgb(63, 82, 99);
+}
+#new-grid {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#new-grid button {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+#new-grid button:hover {
   background-color: rgb(63, 82, 99);
 }
 
@@ -43,20 +61,19 @@ h1 {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-5px);
+    transform: translateX(-100px);
   }
   50% {
-    transform: translateX(5px);
+    transform: translateX(100px);
   }
   75% {
-    transform: translateX(-5px);
+    transform: translateX(-100px);
   }
   100% {
     transform: translateX(0);
   }
 }
 
-/* Add shake class to trigger animation */
 .shake {
   animation: shake 0.5s;
 }
